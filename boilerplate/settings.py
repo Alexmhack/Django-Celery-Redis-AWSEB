@@ -25,7 +25,8 @@ SECRET_KEY = 'b_xof#98j91@o*kh!3lnwnk0@6av35h4uu)+v3^)x07sbs9o8q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sampleENV.nfrdbscrgz.ap-south-1.elasticbeanstalk.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['sampleENV.nfrdbscrgz.ap-south-1.elasticbeanstalk.com', 'localhost', '127.0.0.1',
+    '13.234.208.87']
 
 
 # Application definition
