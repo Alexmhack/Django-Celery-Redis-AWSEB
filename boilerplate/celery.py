@@ -1,3 +1,5 @@
+from __future__ import unicode_literals, absolute_import
+
 from celery import Celery
 
 app = Celery('boilerplate', include=['boilerplate.tasks'])
