@@ -1,7 +1,6 @@
 from celery import Celery
 
-app = Celery('boilerplate', broker='redis://', include=['boilerplate.tasks'],
-	backend='redis://')
+app = Celery('boilerplate', include=['boilerplate.tasks'])
 
 if __name__ == '__main__':
 	app.start()
