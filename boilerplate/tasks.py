@@ -4,4 +4,6 @@ from celery import shared_task
 
 @shared_task
 def add(x, y):
-    return (x + y)
+	x = int(x)
+	y = int(y)
+	return (x + y)
