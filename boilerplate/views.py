@@ -8,5 +8,5 @@ def index_view(request):
 		a = request.POST.get('a')
 		b = request.POST.get('b')
 		result = add.apply_async((a, b))
-		context['result'] = result
+		context['result'] = result.get()
 	return render(request, 'index.html', context)
