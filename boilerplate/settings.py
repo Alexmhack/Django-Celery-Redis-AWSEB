@@ -25,8 +25,7 @@ SECRET_KEY = 'b_xof#98j91@o*kh!3lnwnk0@6av35h4uu)+v3^)x07sbs9o8q'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['sampleENV.nfrdbscrgz.ap-south-1.elasticbeanstalk.com', 'localhost', '127.0.0.1',
-    '13.234.208.87', '35.154.241.51', '13.234.213.116']
+ALLOWED_HOSTS = [os.getenv('INSTANCE_URL'), 'localhost', '127.0.0.1']
 
 
 # Application definition
@@ -140,7 +139,7 @@ STATICFILES_DIR = [os.path.join(BASE_DIR, 'static')]
 
 # celery settings
 
-CELERY_DEFAULT_QUEUE = 'celery-broker-sqs'
+CELERY_DEFAULT_QUEUE = os.getenv('CELERY_DEFAULT_QUEUE')
 
 AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
 
