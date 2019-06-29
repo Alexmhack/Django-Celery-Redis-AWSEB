@@ -122,3 +122,22 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+# celery settings
+
+CELERY_DEFAULT_QUEUE = 'celery-broker-sqs'
+
+AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
+
+CELERY_ACCEPT_CONTENT = ['application/json']
+
+CELERY_TASK_SERIALIZER = 'json'
+
+CELERY_RESULT_BACKEND = None  # Disabling the results backend
+
+BROKER_TRANSPORT_OPTIONS = {
+    'polling_interval': 20,
+}
+
+BROKER_URL = "sqs://"
