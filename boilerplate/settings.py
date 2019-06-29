@@ -134,7 +134,8 @@ CELERY_ACCEPT_CONTENT = ['application/json']
 
 CELERY_TASK_SERIALIZER = 'json'
 
-CELERY_RESULT_BACKEND = "sqs://"  # Disabling the results backend
+CELERY_RESULT_BACKEND = None  # Disabling the results backend
+# "sqs://" -> no module named sqs error
 
 BROKER_TRANSPORT_OPTIONS = {
     'polling_interval': 20,
