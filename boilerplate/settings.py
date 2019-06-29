@@ -26,7 +26,7 @@ SECRET_KEY = 'b_xof#98j91@o*kh!3lnwnk0@6av35h4uu)+v3^)x07sbs9o8q'
 DEBUG = True
 
 ALLOWED_HOSTS = ['sampleENV.nfrdbscrgz.ap-south-1.elasticbeanstalk.com', 'localhost', '127.0.0.1',
-    '13.234.208.87']
+    '13.234.208.87', '35.154.241.51', '13.234.213.116']
 
 
 # Application definition
