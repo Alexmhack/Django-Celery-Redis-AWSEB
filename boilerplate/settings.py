@@ -143,9 +143,9 @@ CELERY_DEFAULT_QUEUE = os.getenv('CELERY_DEFAULT_QUEUE')
 
 AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
 
-CELERY_ACCEPT_CONTENT = ['application/json']
+# CELERY_ACCEPT_CONTENT = ['application/json']
 
-CELERY_TASK_SERIALIZER = 'json'
+# CELERY_TASK_SERIALIZER = 'json'
 
 CELERY_RESULT_BACKEND = None  # Disabling the results backend
 # "sqs://" -> no module named sqs error

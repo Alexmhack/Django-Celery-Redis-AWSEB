@@ -8,7 +8,7 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'boilerplate.settings')
 
 app = Celery('boilerplate', include=['boilerplate.tasks'])
 
-app.config_from_object('django.conf:settings')
+# app.config_from_object('django.conf:settings')
 
 if __name__ == '__main__':
 	app.start()
