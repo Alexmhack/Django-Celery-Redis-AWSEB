@@ -83,7 +83,6 @@ BROKER_TRANSPORT_OPTIONS = {
     'polling_interval': 20,
     'region': 'ap-south-1',
 }
-
 BROKER_URL = "sqs://"
 ```
 
