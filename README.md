@@ -72,21 +72,20 @@ contains. You may need to change some things like,
 
 In your settings define some more celery configuration settings like
 
-`CELERY_DEFAULT_QUEUE = os.getenv('CELERY_DEFAULT_QUEUE') # name of your sqs queue`
+```
+CELERY_DEFAULT_QUEUE = os.getenv('CELERY_DEFAULT_QUEUE') # name of your sqs queue
 
-`AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')`
+AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
 
-`CELERY_RESULT_BACKEND = None  # Disabling the results backend since not supported with SQS`
+CELERY_RESULT_BACKEND = None  # Disabling the results backend since not supported with SQS
 
-`BROKER_TRANSPORT_OPTIONS = {`
+BROKER_TRANSPORT_OPTIONS = {
+    'polling_interval': 20,
+    'region': 'ap-south-1',
+}
 
-`    'polling_interval': 20,`
-
-`    'region': 'ap-south-1',`
-
-`}`
-
-`BROKER_URL = "sqs://"`
+BROKER_URL = "sqs://"
+```
 
 The `BROKER_URL` here takes only `"sqs://"` and the rest of the things are done by celery itself by 
 colleting the necessary credentials for access to this SQS queue using the credentials we have set in 
