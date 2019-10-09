@@ -105,8 +105,4 @@ We use pooling in celery worker from the `gevent` package by providing and extra
 `celery.py` to `celeryapp.py`. 
 
 
-
-
-
-
-**I have tested everything and my repo works perfectly fine in the elastic beanstalk environment. If you face any problems checkout this repo code and make changes accordingly in case I have missed something in the instructions or open a issue.**
+**I have tested everything and my repo works perfectly fine in the elastic beanstalk environment. If you face any problems checkout the repo code and make changes accordingly in case I have missed something in the instructions or open a issue.**
