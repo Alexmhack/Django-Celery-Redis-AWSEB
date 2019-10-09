@@ -104,4 +104,9 @@ We use pooling in celery worker from the `gevent` package by providing and extra
 `--app` is to give the location of our celery app since we have changed the file names from 
 `celery.py` to `celeryapp.py`. 
 
-**I have tested everything and my repo works perfectly fine in the elastic beanstalk environment. If you face any problems checkout this repo code and make changes accordingly in case I have missed something in the instructions.**
+
+
+
+
+
+**I have tested everything and my repo works perfectly fine in the elastic beanstalk environment. If you face any problems checkout this repo code and make changes accordingly in case I have missed something in the instructions or open a issue.**
