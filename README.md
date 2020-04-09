@@ -1,5 +1,5 @@
 # Django-Celery-SQS-AWSEB
-Deploying Django application with Celery and Reddis as broker on AWS Elastic Beanstalk
+Deploying Django application with Celery and Redis as broker on AWS Elastic Beanstalk
 
 **UPDATE**: Elastic Cache Redis instance on AWS can cost you much more than SQS will, so I have switched from Redis to SQS.
 SQS even has 1 million requests free every month.
